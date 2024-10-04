@@ -37,10 +37,35 @@ Before you begin, ensure you have the following installed:
 
 ## 📥 Installation
 
+### Option 1: Use this repository as a template
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/ali2kan/supabase-csharp-integration.git
    cd supabase-csharp-integration
+   ```
+
+2. Restore the project dependencies:
+   ```bash
+   dotnet restore
+   ```
+
+### Option 2: Integrate into an existing project
+
+1. Navigate to your existing project directory.
+
+2. Install required NuGet packages:
+   ```bash
+   dotnet add package Supabase
+   dotnet add package DotNetEnv
+   ```
+
+### Option 3: Start a new project
+
+1. Create a new console application:
+   ```bash
+   dotnet new console -n SupabaseCSharpIntegration
+   cd SupabaseCSharpIntegration
    ```
 
 2. Install required NuGet packages:
@@ -57,7 +82,14 @@ Before you begin, ensure you have the following installed:
    SUPABASE_KEY=your_supabase_key
    ```
 
-2. Update the `Program.cs` file with your specific table names and query requirements.
+2. If you're using this repository as a template or starting a new project, update the `Program.cs` file with your specific table names and query requirements.
+
+3. If you're integrating into an existing project, copy the relevant code from the `Program.cs` in this repository and adapt it to your project structure.
+
+4. Build the project to generate the `obj` and `bin` directories:
+   ```bash
+   dotnet build
+   ```
 
 ## 🚀 Usage
 
@@ -68,6 +100,9 @@ dotnet run
 ```
 
 This will execute the sample queries and display the results in the console.
+
+[... rest of the content unchanged ...]
+
 
 ## 🔗 Integration with Existing Projects
 
