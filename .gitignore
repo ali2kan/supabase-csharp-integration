@@ -1,0 +1,61 @@
+.env
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userprefs
+
+# Ignore Visual Studio specific files
+.vs/
+*.vscode/
+
+# Ignore compiled DLLs and EXEs
+*.dll
+*.exe
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+
+# Ignore Rider specific files
+.idea/
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore backup files
+*.bak
+*.old
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore coverage reports
+coverage/
+*.coverage
+*.coveragexml
+
+# Ignore test results
+TestResults/
+
+# Ignore generated files
+*.generated.cs
+
+# Ignore lock files
+*.lock
+
+# Ignore other environment files
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+# End Generation Here
