@@ -101,8 +101,6 @@ dotnet run
 
 This will execute the sample queries and display the results in the console.
 
-[... rest of the content unchanged ...]
-
 
 ## 🔗 Integration with Existing Projects
 
