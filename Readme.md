@@ -4,17 +4,17 @@ This repository demonstrates how to integrate Supabase with C# applications, foc
 
 ## 📚 Table of Contents
 
-- [Overview](#overview)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Integration with Existing Projects](#integration-with-existing-projects)
-- [WinForms Integration Example](#winforms-integration-example)
-- [Data Export](#data-export)
-- [Best Practices](#best-practices)
-- [Contributing](#contributing)
-- [License](#license)
+- [Overview](#-overview)
+- [Prerequisites](#-prerequisites)
+- [Installation](#-installation)
+- [Setup](#%EF%B8%8F-setup)
+- [Usage](#-usage)
+- [Integration with Existing Projects](#-integration-with-existing-projects)
+- [WinForms Integration Example](#-winforms-integration-example)
+- [Data Export](#-data-export)
+- [Best Practices](#-best-practices)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ## 🔍 Overview
 
@@ -170,3 +170,7 @@ For Excel export, consider using libraries like EPPlus or ClosedXML.
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
