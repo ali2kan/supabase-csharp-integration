@@ -1,6 +1,6 @@
 # 🚀 Supabase C# Integration
 
-This repository demonstrates how to integrate Supabase with C# applications, focusing on querying data from multiple tables. It serves as a template for connecting to Supabase backends and performing database operations in C# environments.
+This repository demonstrates how to integrate Supabase with C# applications, focusing on querying data from multiple schemas and tables. It serves as a template for connecting to Supabase backends and performing database operations in C# environments.
 
 ## 📚 Table of Contents
 
