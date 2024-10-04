@@ -40,12 +40,14 @@ Before you begin, ensure you have the following installed:
 ### Option 1: Use this repository as a template
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/ali2kan/supabase-csharp-integration.git
    cd supabase-csharp-integration
    ```
 
 2. Restore the project dependencies:
+
    ```bash
    dotnet restore
    ```
@@ -55,6 +57,7 @@ Before you begin, ensure you have the following installed:
 1. Navigate to your existing project directory.
 
 2. Install required NuGet packages:
+
    ```bash
    dotnet add package Supabase
    dotnet add package DotNetEnv
@@ -63,12 +66,14 @@ Before you begin, ensure you have the following installed:
 ### Option 3: Start a new project
 
 1. Create a new console application:
+
    ```bash
    dotnet new console -n SupabaseCSharpIntegration
    cd SupabaseCSharpIntegration
    ```
 
 2. Install required NuGet packages:
+
    ```bash
    dotnet add package Supabase
    dotnet add package DotNetEnv
@@ -77,6 +82,7 @@ Before you begin, ensure you have the following installed:
 ## ⚙️ Setup
 
 1. Create a `.env` file in the project root with your Supabase credentials:
+
    ```plaintext
    SUPABASE_URL=your_supabase_url
    SUPABASE_KEY=your_supabase_key
@@ -87,6 +93,7 @@ Before you begin, ensure you have the following installed:
 3. If you're integrating into an existing project, copy the relevant code from the `Program.cs` in this repository and adapt it to your project structure.
 
 4. Build the project to generate the `obj` and `bin` directories:
+
    ```bash
    dotnet build
    ```
@@ -101,7 +108,6 @@ dotnet run
 
 This will execute the sample queries and display the results in the console.
 
-
 ## 🔗 Integration with Existing Projects
 
 To integrate Supabase into an existing C# project:
@@ -109,6 +115,7 @@ To integrate Supabase into an existing C# project:
 1. Install the required NuGet packages (Supabase, DotNetEnv).
 2. Add the model classes for your Supabase tables (see `Program.cs` for examples).
 3. Initialize the Supabase client:
+
    ```csharp
    var options = new SupabaseOptions
    {
@@ -118,7 +125,9 @@ To integrate Supabase into an existing C# project:
    var client = new Supabase.Client(supabaseUrl, supabaseKey, options);
    await client.InitializeAsync();
    ```
+
 4. Use the client to query your data:
+
    ```csharp
    var response = await client
        .From<YourModel>()
@@ -133,6 +142,7 @@ To integrate Supabase querying into a WinForms application:
 1. Create a new WinForms project in Visual Studio.
 2. Install the Supabase NuGet package.
 3. Add a method to initialize the Supabase client:
+
    ```csharp
    private Supabase.Client _supabaseClient;
 
@@ -150,8 +160,11 @@ To integrate Supabase querying into a WinForms application:
        _supabaseClient = new Supabase.Client(supabaseUrl, supabaseKey, options);
        await _supabaseClient.InitializeAsync();
    }
+
    ```
+
 4. Call this method in your form's constructor or load event:
+
    ```csharp
    public Form1()
    {
@@ -159,7 +172,9 @@ To integrate Supabase querying into a WinForms application:
        InitializeSupabaseClient().Wait();
    }
    ```
+
 5. Create methods to query data and update UI controls:
+
    ```csharp
    private async Task LoadData()
    {
@@ -171,6 +186,7 @@ To integrate Supabase querying into a WinForms application:
        dataGridView1.DataSource = response.Models;
    }
    ```
+
 6. Call these methods from button click events or other appropriate UI triggers.
 
 ## 📊 Data Export
@@ -178,10 +194,13 @@ To integrate Supabase querying into a WinForms application:
 To export data to CSV:
 
 1. Install the CsvHelper NuGet package:
+
    ```bash
    dotnet add package CsvHelper
    ```
+
 2. Use the following code to export data:
+
    ```csharp
    using (var writer = new StreamWriter("output.csv"))
    using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
